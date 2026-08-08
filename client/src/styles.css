@@ -6625,10 +6625,9 @@ meter {
    ============================================================ */
 
 .ed-page {
-  height: calc(100vh - 0px);
   display: flex !important;
   flex-direction: column;
-  overflow: hidden;
+  overflow-y: auto;
   padding: 24px 32px !important;
   gap: 20px !important;
 }
@@ -6640,11 +6639,9 @@ meter {
 }
 
 .ed-levels-grid {
-  flex: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  min-height: 0; /* allow flex child to shrink */
 }
 
 /* ---- Level Card ---- */
@@ -6815,11 +6812,9 @@ meter {
    ============================================================ */
 
 .ed-investigations-grid {
-  flex: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  min-height: 0;
 }
 
 /* ---- Category Column Card ---- */
@@ -6876,10 +6871,8 @@ meter {
   color: #6b7280;
 }
 
-/* ---- Items list (scrollable inside the column) ---- */
+/* ---- Items list ---- */
 .ed-category-items {
-  flex: 1;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   padding: 8px 0;
